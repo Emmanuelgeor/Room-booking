@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <script>
+        // When OK is pressed in the new page's alert box
+        function okPressed() {
+            // Set a value in localStorage to signal the original page
+            localStorage.setItem('payment', 'true');
+        }
+    </script>
+</head>
+<body>
+    <h1>New Page Content</h1>
+    <button onclick="okPressed()">Press OK</button>
+</body>
+</html>

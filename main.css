@@ -1,0 +1,183 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*#img
+{
+    padding: 0;
+    margin: 5vw;
+    width:28vw;
+    height: 17vw;
+    border: 1px solid white;
+    border-radius: 5vw;
+    background-image: url("img/room2.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}*/
+.inside_body
+{
+    background-image: url('img/bg_uow_3.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#overlay::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+
+label
+{
+font-size: 1.2vw;
+}
+
+#heading
+{
+    padding: 0;
+    margin: 0;
+}
+input
+{
+color: white;
+font-size: 1vw;
+border-radius: .3vw;
+padding: 0.2vw;
+border: 2px solid #E9EEF3;
+}
+
+#room_details_container
+{
+right: 8vw;
+text-align: center;
+padding: 3vw;
+margin: 0 auto;
+width: 20vw;
+height: auto;
+background-color: transparent;
+backdrop-filter: blur(7px);
+color: white;
+border-radius: 1vw;
+border: 1px solid #ffffff;
+box-shadow: 5px 7px lightgrey;
+font-family: 'Poppins', sans-serif;
+font-weight: lighter;
+z-index: 1;
+caret-color: white;
+}
+
+#room_name
+{
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.7px solid white;
+}
+
+#room_capacity
+{
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.7px solid white;
+}
+
+#room_date
+{
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.7px solid white;
+}
+
+#room_time1
+{
+    margin-right: 1.5vw;
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.7px solid white;
+}
+
+#room_time2
+{
+    margin-left: 1.5vw;
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.7px solid white;
+}
+
+#promo_code
+{
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.7px solid white;
+}
+
+#submit, #reset
+{
+font-size: 1vw;
+font-family: 'Poppins', sans-serif;
+padding-left: 1vw;
+padding-right: 1vw;
+border: 1px solid #ffffff;
+border-radius: 3vw;
+background-color: transparent;
+cursor: pointer;
+transition: transform 0.2s, background-color 0.2s;
+}
+
+#submit:hover, #reset:hover
+{
+    transform: scale(1.05);
+}
+
+
+#submit:active, #reset:active
+{
+    color: black;
+    background-color: #f2f2f2;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invert the colors (white icon on dark background) */
+  }

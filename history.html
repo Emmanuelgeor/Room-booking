@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms Available</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <div class = "logo">
+        <img src="img/uowlogowhite.png" alt="UOW Logo" width="200px">
+    </div>
+    <div class = "inside_body">
+
+        <div id="user_actions">
+            <button id="home_button">Home</button>
+            <button id="logout_button">Logout</button>
+          </div>
+        <div id = "overlay">
+        </div>
+        <div id = "box1">
+            <form id="book_details">
+            <label id = "heading"><h2>-- DATE RANGE --</h2></label><br>
+            <label>From</label><br><br>
+            <input type="date" id="date1" name="room_date" value="2023-mm-dd" required><br><br>
+            <label>Till</label><br><br>
+            <input type="date" id="date2" name="room_date" value="2023-mm-dd" required><br><br>
+            <input type="button" onclick="searching()" id="search" value="search">
+            </form>
+        </div>
+        <div id ="box2">
+            <table id="his_table">
+                <tr>
+                    <th><h3>Student</h3></th>
+                    <th><h3>Room</h3></th>
+                    <th><h3>Date</h3></th>
+                    <th><h3>From</h3></th>
+                    <th><h3>Till</h3></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="history.js"></script>
+</body>
+</html>

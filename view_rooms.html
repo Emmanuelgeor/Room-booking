@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <title>Rooms</title>
+  <link rel="stylesheet" href="view_rooms.css">
+</head>
+
+<body>
+    <div class = "logo">
+        <img src="img/uowlogowhite.png" alt="UOW Logo" width="200px">
+    </div>
+
+
+    <div class = "inside_body">
+        <div id="user_actions">
+            <button id="home_button">Home</button>
+            <button id="logout_button">Logout</button>
+          </div>
+        <div id="room_container">
+          <h1>Available Rooms</h1>
+
+          <table id="rooms">
+            <tr id="header_row">
+                <th>Room Name</th>
+                <th>Location</th>
+                <th>Capacity</th>
+                <th>Available Days</th>
+                <th>Price</th>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id = "overlay">
+    </div>
+
+<script src="view_rooms.js"></script>
+</body>
+</html>

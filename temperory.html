@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Code After Returning</title>
+    <script>
+        function openNewTab() {
+            var newTab = window.open('temporary_pay.html', '_blank');
+
+            // Attach an event listener to the storage event
+            window.addEventListener('storage', function (event) {
+                if (event.key === 'payment' && event.newValue === 'true') {
+                    alert('Payment successful & Room booked');
+                    localStorage.removeItem('payment');
+                    newTab.close();
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openNewTab()">Open New Tab</button>
+</body>
+</html>

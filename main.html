@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <title>Book Room</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <div class = "logo">
+        <img src="img/uowlogowhite.png" alt="UOW Logo" width="200px">
+    </div>
+
+  <div class = "inside_body">
+    <div id="img"></div>
+    <div id="room_details_container">
+        <label id = "heading"><h2>NEW BOOKING</h2></label><br>
+        <form id="room_details">
+        <label for="room_date">BOOKING DATE</label><br><br>
+        <input type="date" id="room_date" name="room_date" value="2023-mm-dd" required><br><br>
+        <label for="room_time">Starting At &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ending At</label><br><br>
+        <input type="time" id="room_time1" name="room_time" step="1800" required>
+        <input type="time" id="room_time2" name="room_time" step="1800" required><br><br>
+        <label for="room_capacity">ROOM CAPACITY</label><br>
+        <input type="number" id="room_capacity" name="room_capacity" min="1" max="8" required><i style="font-size: .9vw"> <br> (Maximum 8 people allowed per room)</i><br><br>
+        <label for="promo_code">PROMO CODE (optional)</label><br>
+        <input type="text" id="promo_code" name="promo_code"><br><br>
+        <input type="button" id="submit" name="submit" value="Book" onclick=openNewTab()>
+        <input type="reset" id="reset" name="reset">
+        </form>
+    </div>
+</div>
+
+<div id = "overlay">
+</div>
+
+  <script src="main.js">
+  </script>
+</body>
+</html>

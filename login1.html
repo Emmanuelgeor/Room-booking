@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+<body>
+    <div class = "logo">
+        <img src="img/uowlogowhite.png" alt="UOW Logo" width="200px">
+    </div>
+    <div class = "inside_body">
+        <div id = "overlay">
+        </div>
+        <div id = "login_box">
+            <form id="user_cred">
+                <label class = "titl">Staff Login</label><br><br>
+                <input type="text" id="username" class="t" name="username" placeholder="username" required><br>
+                <input type="password" id="password" class="t" name="password" placeholder="password" required><br>
+                <button type = "button" onclick="validateLogin()">Login</button>
+            </form>
+        </div>
+    </div>
+<script src="login1.js"></script>
+</body>
+</html>
